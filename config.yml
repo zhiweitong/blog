@@ -1,6 +1,6 @@
 baseURL: "https://zhiwei.tw"
 title: ZHIWEI's blog
-paginate: 5
+paginate: 10
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -10,17 +10,44 @@ buildExpired: false
 
 # googleAnalytics: UA-123-45
 
-minify:
-  disableXML: true
-  minifyOutput: true
+# minify:
+#   disableXML: true
+#   minifyOutput: true
+
+menu:
+  main:
+    - name: Search
+      url: /search/
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: about
+      name: About Me
+      url: /about/
+      weight: 30
+      
+# Search Configs
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
+# Catergory Configs
+taxonomies:
+    category: categories
+    tag: tags
 
 params:
+  # Global Settings
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "ExampleSite description"
-  keywords: [Blog, Portfolio, PaperMod]
-  author: Me
-  # author: ["Me", "You"] # multiple authors
+  description: "Just a description."
+  author: ZHIWEI # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "2006-01-02 15:04:05 UTC+8"
   defaultTheme: dark # dark, light
@@ -54,8 +81,8 @@ params:
   # profile-mode
   profileMode:
     enabled: false # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
+    title: "ZHIWEI's website"
+    subtitle: "碳跟鑽石最大的差別是壓力。"
     imageUrl: "<img location>"
     imageWidth: 120
     imageHeight: 120
@@ -72,8 +99,8 @@ params:
     Content: 碳跟鑽石最大的差別是壓力。
 
   socialIcons:
-    - name: facebook
-      url: "https://facebook.com/zhiwei.tw"
+    - name: email
+      url: "mailto:tong@zhiwei.tw"
     - name: github
       url: "https://github.com/zhiweitong"
     - name: linkedin
@@ -107,20 +134,7 @@ params:
     threshold: 0.4
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
-menu:
-  main:
-    - identifier: categories
-      name: categories
-      url: /categories/
-      weight: 10
-    - identifier: tags
-      name: tags
-      url: /tags/
-      weight: 20
-    - identifier: about
-      name: About Me
-      url: /about/
-      weight: 30
+
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 # pygmentsUseClasses: true
 # markup:
