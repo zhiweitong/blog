@@ -17,19 +17,20 @@ buildExpired: false
 menu:
   main:
     - name: Search
-      url: /search/
+      url: search/
+      weight: 10
     - identifier: categories
       name: categories
-      url: /categories/
-      weight: 10
+      url: categories/
+      weight: 20
     - identifier: tags
       name: tags
-      url: /tags/
-      weight: 20
+      url: tags/
+      weight: 30
     - identifier: about
       name: About Me
-      url: /about/
-      weight: 30
+      url: about/
+      weight: 40
       
 # Search Configs
 outputs:
