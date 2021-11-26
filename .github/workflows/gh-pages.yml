@@ -20,6 +20,9 @@ jobs:
         with:
           ref: main
 
+      - name: Init Submodule
+        run: git submodule init
+        
       - name: Get Theme
         run: git submodule update --init --recursive
 
