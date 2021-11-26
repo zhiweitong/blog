@@ -21,7 +21,7 @@ jobs:
           ref: main
 
       - name: Submodule Add PaperMod
-        run: git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
+        run: git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/hugo-PaperMod
         
       - name: Get Theme
         run: git submodule update --init --recursive
