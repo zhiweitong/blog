@@ -22,6 +22,14 @@ jobs:
 
       - name: Submodule Add PaperMod
         run: git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/hugo-PaperMod
+        
+        # Must be sure 8~12 is powering list
+      - name: Remove Powering list
+        run: |
+          vim /home/runner/work/zhiweitong.github.io/zhiweitong.github.io/themes/hugo-PaperMod/layouts/partials/footer.html << EOF
+          : 8, 12d
+          :wq
+          EOF
 
       - name: Setup hugo
         uses: peaceiris/actions-hugo@v2
