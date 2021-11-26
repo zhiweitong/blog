@@ -24,6 +24,7 @@ jobs:
         run: |
           git config --global submodule.themes/hugo-PaperMod.active true
           git config --global submodule.themes/hugo-PaperMod.url "https://github.com/adityatelange/hugo-PaperMod.git"
+          git config --list
         
       - name: Get Theme
         run: git submodule update --init --recursive
