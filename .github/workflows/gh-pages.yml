@@ -20,11 +20,11 @@ jobs:
         with:
           ref: main
 
-      - name: Submodule Add PaperMod
+      - name: Submodule add PaperMod
         run: git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/hugo-PaperMod
         
         # Must be sure 8~12 is powering list
-      - name: Remove Powering list
+      - name: Remove powering list
         run: |
           vim /home/runner/work/zhiweitong.github.io/zhiweitong.github.io/themes/hugo-PaperMod/layouts/partials/footer.html << EOF
           : 8, 12d
