@@ -20,11 +20,8 @@ jobs:
         with:
           ref: main
 
-      - name: Set Submodule Config
-        run: |
-          git config --global submodule.themes/hugo-PaperMod.active true
-          git config --global submodule.themes/hugo-PaperMod.url "https://github.com/adityatelange/hugo-PaperMod.git"
-          git config --list
+      - name: Submodule Add PaperMod
+        run: git submodule https://github.com/adityatelange/hugo-PaperMod.git themes
         
       - name: Get Theme
         run: git submodule update --init --recursive
