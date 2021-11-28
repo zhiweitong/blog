@@ -67,6 +67,10 @@ params:
   hideSummary: false
   showtoc: false
   tocopen: false
+  utter:
+    repo: zhiweitong/cmdsforblog
+    issueTerm: pathname
+    theme: photon-dark
 
   assets:
     # disableHLJS: true # to disable highlight.js
