@@ -19,9 +19,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: main
-
-      - name: Submodule add PaperMod
-        run: git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/hugo-PaperMod
+          submodules: recursive
         
         # Must be sure 8~12 is powering list
       - name: Remove powering list
