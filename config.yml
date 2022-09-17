@@ -52,7 +52,7 @@ params:
   images: 
     - /apple-touch-icon.png
   DateFormat: "2006-01-02 15:04:05 UTC+8"
-  defaultTheme: dark # dark, light
+  defaultTheme: auto # auto, light, dark
   disableThemeToggle: false
 
   ShowReadingTime: true
