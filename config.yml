@@ -1,5 +1,5 @@
 baseURL: "https://zhiwei.tw"
-title: ZHIWEI's blog
+title: ZHIWEI
 paginate: 10
 theme: hugo-PaperMod
 
@@ -87,7 +87,7 @@ params:
   # profile-mode
   profileMode:
     enabled: false # needs to be explicitly set
-    title: "ZHIWEI's website"
+    title: "ZHIWEI"
     subtitle: "碳跟鑽石最大的差別是壓力。"
     imageUrl: "<img location>"
     imageWidth: 120
