@@ -82,7 +82,7 @@ params:
     # safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "ZHIWEI's blog"
+    text: "ZHIWEI"
 
   # profile-mode
   profileMode:
