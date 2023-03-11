@@ -110,7 +110,7 @@ params:
     - name: github
       url: "https://github.com/zhiweitong"
     - name: linkedin
-      url: "https://www.linkedin.com/in/zhiweitong"
+      url: "https://www.linkedin.com/in/zwtong"
 
   analytics:
     google:
