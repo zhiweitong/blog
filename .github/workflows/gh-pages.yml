@@ -22,12 +22,12 @@ jobs:
           submodules: recursive
         
         # Must be sure 8~12 is powering list
-      - name: Remove powering list
-        run: |
-          vim /home/runner/work/zhiweitong.github.io/zhiweitong.github.io/themes/hugo-PaperMod/layouts/partials/footer.html << EOF
-          : 8, 12d
-          :wq
-          EOF
+#       - name: Remove powering list
+#         run: |
+#           vim /home/runner/work/zhiweitong.github.io/zhiweitong.github.io/themes/hugo-PaperMod/layouts/partials/footer.html << EOF
+#           : 8, 12d
+#           :wq
+#           EOF
 
       - name: Setup hugo
         uses: peaceiris/actions-hugo@v2
