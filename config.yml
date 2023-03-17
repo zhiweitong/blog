@@ -1,4 +1,4 @@
-baseURL: "https://zhiwei.tw"
+baseURL: "https://blog.zhiwei.tw"
 title: ZHIWEI
 paginate: 10
 theme: hugo-PaperMod
